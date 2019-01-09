@@ -6,7 +6,8 @@ const data = require('./employee_info.json');
 router.post('/', (req,res) => {
  let payload = req.body;
    // Respond to this event with HTTP 200 status
-   res.sendStatus(200);
+   // res.sendStatus(200);
+   res.send(payload.challenge);
    // console.log(payload);
  //
  if (payload.event.type === "app_mention") {
@@ -16,13 +17,6 @@ router.post('/', (req,res) => {
           checkCommand(checkName(split_message[1]), split_message);
       }
     }
-    // if(payload.event.type === 'message'){
-    //   let split_message = payload.event.text.split(' ');
-    //   console.log('message');
-    //   if (checkName(split_message[1])) {
-    //       checkCommand(checkName(split_message[1]), split_message);
-    //   }
-    // }
 });
 
 //parses user input of name based on message split[1] -- split[0]is userid

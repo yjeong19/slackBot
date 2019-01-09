@@ -5,7 +5,7 @@
         "last_name":""
     },
     "david":{
-        "department":"Machine Learning",
+        "department":"fun department",
         "email":"david@bestdavid.com",
         "manager":"Matt",
         "phone_number":"584-2398"
@@ -13,7 +13,7 @@
     "joe":{
         "department":"Product",
         "manager":"Adam",
-        "last_name":"McClendon"
+        "last_name":"Mconal"
     },
     "srini":{
         "department":"Marketing",
@@ -33,7 +33,7 @@
         "last_name":""
     },
     "matt":{
-        "department":"Machine Learning",
+        "department":"school Learning",
         "manager":"Adam",
         "email":"matt@mlop.com",
         "last_name":""
