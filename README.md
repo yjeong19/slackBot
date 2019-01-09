@@ -18,9 +18,12 @@
 
 ** Output **
 > Kevin is in HR department
-Kevin's last name is Smith
-Kevin's real first name is Harry Potter
-Kevin's email is : kevin@hogwarts.com
+
+> Kevin's last name is Smith
+
+> Kevin's real first name is Harry Potter
+
+> Kevin's email is : kevin@hogwarts.com
 
 ##### Example
 ![bella](/bella.png)
