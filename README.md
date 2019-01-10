@@ -1,7 +1,8 @@
 ## Slack Bot mock interview
-1. User calls bot and with Name as requirement and query.
-2. Bot responds with the query requested.
+1. User calls and gives a first name (required) as the first word.
+2. after the first name, user can ask for information from the dataset.  
 3. Can call multiple fields.
+4. Bot responds with the query requested.
 
 ##### Example
 ** Input **
