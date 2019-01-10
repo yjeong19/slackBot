@@ -60,28 +60,27 @@ function checkCommand(emp, split_message){
 //first, last, phone, number, department, email, manager
 //returns message based on input
 function returnMsg(emp, query){
-  let str;
   const emp_info = data[emp];
   console.log(emp_info);
   query.forEach((q, i) => {
     switch(q){
       case 'last' || 'lastname':
-        str = emp_info.last_name ? `${emp}'s last name is: ${emp_info.last_name}` : 'No user info';
+        let str = emp_info.last_name ? `${emp}'s last name is: ${emp_info.last_name}` : 'No user info';
         return reply(str)
       case 'first' || 'firstname':
-        str = emp_info.real_first_name ? `${emp}'s real first name is: ${emp_info.real_first_name}` : 'No user info';
+        let str = emp_info.real_first_name ? `${emp}'s real first name is: ${emp_info.real_first_name}` : 'No user info';
         return reply(str)
       case 'phone' || 'number':
-        str = emp_info.phone_number ? `${emp}'s phone number is: ${emp_info.phone_number}` : 'No user info';
+        let str = emp_info.phone_number ? `${emp}'s phone number is: ${emp_info.phone_number}` : 'No user info';
         return reply(str)
       case 'department':
-        str = emp_info.department ? `${emp} is in ${emp_info.department} department` : 'No user info';
+        let str = emp_info.department ? `${emp} is in ${emp_info.department} department` : 'No user info';
         return reply(str)
       case 'email':
-        str = emp_info.email ? `${emp}'s email: ${emp_info.email}` : 'No user info';
+        let str = emp_info.email ? `${emp}'s email: ${emp_info.email}` : 'No user info';
         return reply(str)
       case 'manager':
-        str = emp_info.manager ? `${emp_info.manager} is ${emp}'s manager` : 'No user info';
+        let str = emp_info.manager ? `${emp_info.manager} is ${emp}'s manager` : 'No user info';
         return reply(str)
     default:
       return null;
